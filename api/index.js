@@ -130,6 +130,13 @@ var atletico = {
   ]
 }
 
+var atleticoImages = {
+  31: 'https://fotografias.lasexta.com/clipping/cmsimages01/2019/02/07/81CE3BC8-905E-4904-92F7-B4D6A27B8963/58.jpg',
+  32: 'https://as01.epimg.net/futbol/imagenes/2017/10/18/primera/1508362211_900651_1508362332_noticia_normal.jpg',
+  33: 'https://cadenaser00.epimg.net/ser/imagenes/2018/11/12/deportes/1542055161_970998_1542057866_noticia_normal_recorte1.jpg',
+  34: 'https://e00-marca.uecdn.es/assets/multimedia/imagenes/2017/04/07/14915594564824.jpg',
+}
+
 var pichichis = [
   {
     playerId: '11',
@@ -179,13 +186,6 @@ var pichichis = [
     goals: 3,
   }
 ]
-
-var atleticoImages = {
-  31: 'https://fotografias.lasexta.com/clipping/cmsimages01/2019/02/07/81CE3BC8-905E-4904-92F7-B4D6A27B8963/58.jpg',
-  32: 'https://as01.epimg.net/futbol/imagenes/2017/10/18/primera/1508362211_900651_1508362332_noticia_normal.jpg',
-  33: 'https://cadenaser00.epimg.net/ser/imagenes/2018/11/12/deportes/1542055161_970998_1542057866_noticia_normal_recorte1.jpg',
-  34: 'https://e00-marca.uecdn.es/assets/multimedia/imagenes/2017/04/07/14915594564824.jpg',
-}
 
 var teamsMap = {
   1: madrid,
