@@ -16,7 +16,7 @@ Tampoco te eches atrás por el número de ejercicios, sabemos que son un montón
 
 ### Valoraremos positivamente:
 - Que hagas la prueba en **React** o en su defecto **Vanilla JS**.
-- Que *no* añadas *librerias*.
+- Que *no* añadas más *librerias*.
 - El uso de **CSS Flex**.
 
 ### PROYECTO
@@ -33,7 +33,7 @@ $ node start
 * Ya debes tener la api corriendo en **localhost:3001**
 
 2- App
-* En el esta el frontal. Es un scaffolding de react, pero si no quieres usar React móntatelo como quieras.
+* En esta carpeta está el frontal. Es un scaffolding de react, pero si no quieres usar React móntatelo como quieras, pero recuerda mejor en **Vanilla JS**.
 * Familiarizate con App.js y App.css 
 * Ejecuta la app situándote con la terminal en su folder.
 ```
@@ -126,6 +126,11 @@ Haz un botón para ordenar por número de goles.
   - Añade la flecha propuesta en los visuales para indicar si la lista está invertida o no.
 
 ## Ejercicio 8:
+El público objetivo de nuestra aplicación son altos directivos de clubes de La Liga. Suelen viajar mucho en avión donde no gozan de conexión a internet pero es donde suelen tener espacio para revisar a sus jugones. Hay que conseguir que puedan usar la app en estas condiciones.
+- La única funcionalidad que no se podrá usar es la de traspasos (ejercios sucesivos).
+- Debe ser posible realizar un *refresh* de la página y siga funcionando.
+
+## Ejercicio 9:
 Ha llegado una nueva funcionalidad que es la de traspasos. 
 - Si haces click en un jugador de la lista se tiene que abrir una modal.
 - Crea una nueva componente para esto.
@@ -156,6 +161,6 @@ codes:
 - Guiate por los visuales.
 
 
-## Ejercicio 9:
+## Ejercicio 10:
 Arregla la api para que sea capaz de acabar las transacciones. Como te habrás dado cuenta antes no se resta la cantidad en la transacción.
 - Vuelve a la modal de transacción del frontal y asegurate que todo sigue funcionando correctamente.
