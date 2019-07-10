@@ -126,7 +126,7 @@ Haz un botón para ordenar por número de goles.
   - Añade la flecha propuesta en los visuales para indicar si la lista está invertida o no.
 
 ## Ejercicio 8:
-El público objetivo de nuestra aplicación son altos directivos de clubes de La Liga. Suelen viajar mucho en avión donde no gozan de conexión a internet pero es donde suelen tener espacio para revisar a sus jugones. Hay que conseguir que puedan usar la app en estas condiciones.
+El público objetivo de nuestra aplicación son altos directivos de clubes de La Liga. Suelen viajar mucho en avión donde no gozan de conexión a internet pero es donde suelen tener tiempo para revisar a sus jugones. Hay que conseguir que puedan usar la app en estas condiciones.
 - La única funcionalidad que no se podrá usar es la de traspasos (ejercios sucesivos).
 - Debe ser posible realizar un *refresh* de la página y siga funcionando.
 
