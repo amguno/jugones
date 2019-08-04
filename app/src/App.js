@@ -1,13 +1,20 @@
 import reactSvg from './react.svg'
 import './App.css'
 import Player from './components/Player'
+import Modal from './components/Modal'
 
 import React, { PureComponent } from 'react'
 const domain = 'http://localhost:3001'
 
 class App extends PureComponent {
-  state = {
-    players: []
+  constructor(){
+    super();
+    this.state = {
+      players: [],
+      modal: "modal modal--hide"
+    }
+    this.showModal = this.showModal.bind(this);
+    this.hideModal = this.hideModal.bind(this);
   }
 
   componentDidMount() {
@@ -20,12 +27,19 @@ class App extends PureComponent {
       });
   }
 
+  showModal(){
+    this.setState({modal: "modal modal--show"});
+  }
+  hideModal(){
+    this.setState({modal: "modal modal--hide"});    
+  }    
   render() {
     const { players } = this.state
 
     return <div className="App">
+      <Modal status={this.state.modal} hideModal={this.hideModal}/>
       <header className="header">
-        <button>Pichichis</button>
+        <button onClick={this.showModal}>Pichichis</button>
       </header>
       <div className="App-teams App-flex">
         {/* 
@@ -36,7 +50,6 @@ class App extends PureComponent {
           ** Los comentarios de los ejercicios no los borres.
         */
         }
-        <h3>Jugadores:</h3>
     
           {/* 
             TODO ejercicio 3
@@ -46,10 +59,6 @@ class App extends PureComponent {
           <article className="players">
             {players.map(player => <Player key={player.id} data={player}/>)}
           </article>
-      </div>
-      <div className="App-instructions App-flex">
-        <img className="App-logo" src={reactSvg}/>
-        <p>Edit <code>src/App.js</code> and save to hot reload your changes.</p>
       </div>
     </div>
   }
