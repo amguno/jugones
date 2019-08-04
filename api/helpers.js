@@ -12,6 +12,16 @@ const getPlayer = (playerId, teams) =>  {
   return false
 }
 
+const getPlayers = (players, positionsString) => {
+  let p = JSON.parse(JSON.stringify(players));
+  p.map(player => {
+      player.position = positionsString[player.position]
+    }
+  )
+  return p;
+}
+
 module.exports = {
-  getPlayer
+  getPlayer,
+  getPlayers
 }

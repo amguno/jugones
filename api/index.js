@@ -219,8 +219,10 @@ app.get('/players', function (req, res) {
   //   }, ...
   // ]
   // TIP: familiarizate primero con los objetos de los equipos: var madrid, barcelona y atletico.
-  // TIP2: asegurate que position no es el código de la posición, si no el string
-  res.json({})
+  // TIP2: asegurate que position no es el código de la posición, si no el string  
+  res.json(helpers.getPlayers([
+    ...madrid.players, ...barcelona.players, ...atletico.players],
+     POSITIONS_STRING))
 });
 
 app.get('/pichichis', function (req, res) {
