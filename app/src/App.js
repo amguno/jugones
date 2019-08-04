@@ -1,5 +1,6 @@
 import reactSvg from './react.svg'
 import './App.css'
+import Player from './components/Player'
 
 import React, { PureComponent } from 'react'
 const domain = 'http://localhost:3001'
@@ -36,14 +37,15 @@ class App extends PureComponent {
         */
         }
         <h3>Jugadores:</h3>
-        <ul>
+    
           {/* 
             TODO ejercicio 3
             Vamos a pasar a darle diseño. Crea el diseño propuesto en el readme con los requerimientos que se necesite.
             Guiate por las imágenes.
-           */}
-          {players.map(player => <li>{player.name}</li>)}
-        </ul>
+          */}
+          <article className="players">
+            {players.map(player => <Player key={player.id} data={player}/>)}
+          </article>
       </div>
       <div className="App-instructions App-flex">
         <img className="App-logo" src={reactSvg}/>

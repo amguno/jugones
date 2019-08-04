@@ -207,6 +207,10 @@ app.get('/teams', function (req, res) {
   ])
 });
 
+app.get('/team/:id', function (req, res) {
+  res.json(helpers.getTeamById(req.params.id))
+});
+
 app.get('/players', function (req, res) {
   // TODO ejercicio 1
   // devuelve un array con los jugadores, con la sigueinte pinta
@@ -220,9 +224,7 @@ app.get('/players', function (req, res) {
   // ]
   // TIP: familiarizate primero con los objetos de los equipos: var madrid, barcelona y atletico.
   // TIP2: asegurate que position no es el código de la posición, si no el string  
-  res.json(helpers.getPlayers([
-    ...madrid.players, ...barcelona.players, ...atletico.players],
-     POSITIONS_STRING))
+  res.json(helpers.getPlayers(madrid, barcelona, atletico, POSITIONS_STRING));
 });
 
 app.get('/pichichis', function (req, res) {
