@@ -7,7 +7,24 @@ body {
   margin: 0;
   padding: 0;
 }
-
+.header{
+  background-color: #EEEEEE;
+  height: 40px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  text-align: right;  
+}
+.header button{
+  color: black;
+  border-style: solid;
+  border-color: black;
+  border-radius: 20px;
+  border-width: 1px;
+  margin-top: 4px;
+  padding: 7px 14px;
+  margin-right: 8px;
+}
 .players{
   width: 90%;
 }
